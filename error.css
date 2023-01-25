@@ -1,0 +1,52 @@
+body {
+    background-image: url();
+    background-size: 1550px;
+    background-repeat: no-repeat;
+    background-color: #121111;
+}
+
+@font-face {
+    font-family: Exo2;
+    src: url(Exo2-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-Black.ttf);
+}
+
+h3 {
+    color: white;
+    font-family: Exo2;
+}
+
+h2 {
+    color: white;
+    font-family: Exo2;
+}
+
+h1 {
+    color: purple;
+    font-family: Nunito;
+}
+
+
+p {
+    color: white;
+    font-family: Exo2;
+}
+
+a {
+    color: white;
+    font-family: Exo2;
+}
+
+br {
+    color: white;
+    font-family: Exo2;
+}
+
+div {
+    color: white;
+    font-family: Exo2;
+}
