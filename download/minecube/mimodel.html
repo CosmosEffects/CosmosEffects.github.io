@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function download(filename, fileUrl) {
+        var element = document.createElement('a');
+        element.setAttribute('href', fileUrl); element.setAttribute('download', filename);
+        element.style.display = 'none'; document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+      }
+      download("MineCube.mimodel", "https://cdn.discordapp.com/attachments/1058436364296781914/1067719232621641808/MineCube.mimodel");
+      
+      window.open('','_parent','');
+      window.close();
+    </script>
+  </body>
+</html>
