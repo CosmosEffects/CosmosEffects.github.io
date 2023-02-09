@@ -13,7 +13,13 @@
       }
       download("CosmosIE.zip", "https://cosmoseffects.github.io/CosmosIE.zip");
       
-      window.close();
+      let myWindow;
+      function openWin() {
+        myWindow = window.open("", "myWindow", "width=200, height=100");
+      }
+      function closeWin() {
+        myWindow.close();
+      }
     </script>
   </body>
 </html>
