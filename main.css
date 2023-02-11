@@ -1,8 +1,8 @@
 body {
     background-image: url();
     background-size: 1550px;
-    background-repeat: no-repeat;
     background-color: #121111;
+    background-repeat: no-repeat;
 }
 
 @font-face {
@@ -15,21 +15,10 @@ body {
     src: url(Nunito-Black.ttf);
 }
 
-h3 {
-    color: white;
-    font-family: Exo2;
-}
-
-h2 {
-    color: white;
-    font-family: Exo2;
-}
-
 h1 {
     color: purple;
     font-family: Nunito;
 }
-
 
 p {
     color: white;
@@ -47,6 +36,16 @@ br {
 }
 
 div {
+    color: white;
+    font-family: Exo2;
+}
+
+h2 {
+    color: white;
+    font-family: Exo2;
+}
+
+h3 {
     color: white;
     font-family: Exo2;
 }
