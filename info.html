@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="main.css">
     <title>Information</title>
     <style>
-            @-webkit-keyframes typing { from { width: 0; } }
-            @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
-           
             @font-face {
                 font-family: Exo2;
                 src: url(Exo2-ExtraBold.otf);
@@ -145,7 +142,27 @@
             .light-mode {
                 background-color: white;
                 color: #121111
-            }          
+            }   
+      
+            .container {
+              display: inline-block; 
+            }
+            
+            .typed-out {
+              overflow: hidden; 
+              border-right: .15em solid orange; 
+              white-space: nowrap; 
+              animation: typing 1s steps(20, end) forwards, blinking .8s infinite; 
+              font-size: 1.6rem; width: 0; 
+            } 
+      
+            @keyframes typing { 
+              from { width: 0 } 
+              to { width: 100% } } 
+      
+            @keyframes blinking { 
+              from { border-color: transparent } 
+              to { border-color: orange; } }
     </style>
   </head>
   <body onload="myFunction()">
@@ -158,8 +175,10 @@
                 <a href="https://cosmosai.net/cube">Main Website</a></li>
                 <a href="https://cosmoseffects.github.io/download/minecube/object">MineCube</a>
                 <a class="active" href="https://cosmoseffects.github.io/info">Information</a>
-            </div>            
-            <h3 class="one">Hello! How may we help you?</h3>          
+            </div>
+            <div class="container">
+              <h3 class="one">Hello! How may we help you?</h3>  
+            </div>
             <div class="two">
                 <h2 class="two" type="Button" onclick="toggleText1()">Support</h2>
                 <div class="two-two">
