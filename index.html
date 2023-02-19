@@ -129,6 +129,17 @@
             #myDiv {
               display: none;
             }
+            
+            .logo {
+              width: 100px;
+              height: 100px;
+              transition: 0.3s;
+            }
+            
+            .logo:hover {
+              width: 115px;
+              height: 115px;
+            }
         </style>
     </head>
     <body onload="myFunction()">
@@ -143,7 +154,9 @@
                 <a href="https://cosmoseffects.github.io/info">Information</a>
             </div>
             <div class="fixed-bg"></div>
-            <img class="logo" src="logo-nobg.png" alt="Cosmos Cube" width="100" height="100" style="float: left;">
+            <div class="logo">
+                <img class="logo" src="logo-nobg.png" alt="Cosmos Cube" style="float: left;">
+            </div>        
             <h1 class="texth1">Welcome to Cosmos Effects</h1>
             <h3 class="texth3">The Home of CosmosAI's Sub-Company</h3>
             <img class="mySlides" src="https://cdn.uploader.tech/67/NGG7dtoY9.png" width="400" height="231" alt="MineCubeOBJ" style="float: right;">
