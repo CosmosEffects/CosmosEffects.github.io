@@ -162,6 +162,342 @@
             @keyframes blinking { 
               from { border-color: transparent } 
               to { border-color: black; } }
+
+            .hide1 {
+                opacity: 0;
+                transition: all 5s;
+            }
+
+            .info1:hover .hide1{
+                opacity: 1;
+            }
+
+            .hide2 {
+                opacity: 0;
+                transition: all 5s;
+            }
+
+            .info2:hover .hide2{
+                opacity: 1;
+            }
+
+            .hide3 {
+                opacity: 0;
+                transition: all 5s;
+            }
+
+            .info3:hover .hide3{
+                opacity: 1;
+            }
+
+            .hov3r {
+                color: white;
+                transition: 0.3s;
+            }
+
+            .hov3r:hover {
+                letter-spacing: 3px;
+                text-shadow: 0 2px 1px #747474, 
+                -1px 3px 1px #767676, 
+                -2px 5px 1px #787878,
+                -3px 7px 1px #7a7a7a
+            }
+
+            p.license {
+                margin-right: 5px;
+                position: relative;
+                float: right;
+            }
+    </style>
+  </head>
+  <body onload="myFunction()">
+    <div id="loader"></div>
+        <div style="display: none;" id="myDiv" class="animate-bottom">
+            <div class="navig">
+                <a href="https://cosmoseffects.github.io/">Home</a>
+                <a href="https://github.com/ToxicedIsOnTheLand/CosmosIE">CosmosIE</a></li>
+                <a href="https://cosmosai.net/ie/discord">Discord</a></li>
+                <a href="https://cosmosai.net/cube">Main Website</a></li>
+                <a href="https://cosmoseffects.github.io/download/minecube/object">MineCube</a>
+                <a class="active" href="https://cosmoseffects.github.io/info">Information</a>
+            </div>
+            <div class="hov3r">
+              <a href="https://cosmoseffects.github.io/redirect/discord">
+                <h3 class="one">Hello! How may we help you?</h3>
+              </a>  
+            </div>
+            <div class="info1">
+                <h2>Support</h2>
+                <div class="hide1">
+                    <a>For Assistance and Support join our <a href="https://cosmoseffects.github.io/redirect/discord">Discord!</a></a>
+                </div>
+            </div>
+            <div class="info2">
+                <h2>Information</h2>
+                <div class="hide2">
+                    <a>History: CosmosEffects formerly CosmosIE is a Sub-Company created by ToxicedLOL under the Company CosmosAI Services by Slick. CosmosIE was renamed to CosmosEffects because of the unfitting name CosmosIE. The Sub-Company's official nickname is CosmosFX by GamingKing2436, the owner of the Sub-Company then later replied that CosmosEffects will indefinitely be its official Name.</a>
+                    <p></p>
+                    <a>Applications: we do not have applications for Staff, Developer, nor Artist. We are currently needing Beta Testers (Public or Private) for CosmosIE, Apply now at our <a href="https://cosmosai.net/ie/form">Forms!</a></a>
+                </div>
+            </div>
+            <div class="info3">
+                <h2>Contact</h2>
+                <div class="hide3">
+                    <a>Contact us at <a href="https://cosmoseffects.github.io/redirect/discord">Discord!</a></a>
+                </div>
+            </div>
+            <p id="license" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://CosmosEffects.github.io/">CosmosEffects</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://discord.com/users/732955234489466951">ToxicedLOL</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-ShareAlike 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+        </div>
+    </div>
+    <script>
+        function myFunction2() {
+            var element = document.body;
+            element.classList.toggle("light-mode");
+            document.getElementById("one").style.color = "#121111";
+            document.getElementById("one").style.color = "#121111";
+            document.getElementById("demo1").style.color = "#121111";
+            document.getElementById("demo1-2").style.color = "#121111";
+            document.getElementById("two").style.color = "#121111";
+            document.getElementById("demo2").style.color = "#121111";
+            document.getElementById("demo2-2").style.color = "#121111";                
+            document.getElementById("three").style.color = "#121111";
+            document.getElementById("demo3").style.color = "#121111";
+            document.getElementById("demo3-2").style.color = "#121111";
+            document.getElementById("demo3-3").style.color = "#121111";
+        }
+
+        var myVar;
+        
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+            
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+
+        function toggleText1() {
+            var text = document.getElementById("demo1");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+
+            var text = document.getElementById("demo1-2");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+
+        function toggleText2() {
+            var text = document.getElementById("demo2");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+
+            var text = document.getElementById("demo2-2");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+          
+            var text = document.getElementById("demo2-3");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+        
+        function toggleText3() {
+            var text = document.getElementById("demo3");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+
+            var text = document.getElementById("demo3-3");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="Cosmos Effects" property="og:title"/>
+    <meta content="House of Information of CosmosAI's Sub-Company." property="og:description"/>
+    <meta content="https://cosmoseffects.github.io/" property="og:url"/>
+    <meta content="https://cdn.discordapp.com/attachments/863840867835576360/1059943849818071152/uhhhhh.png" property="og:image"/>
+    <meta content="#7e38ed" data-react-helmet="true" name="theme-color"/>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/863840867835576360/1059943849818071152/uhhhhh.png" type="image/icon type">
+    <link rel="stylesheet" href="main.css">
+    <title>Information</title>
+    <style>
+            @font-face {
+                font-family: Exo2;
+                src: url(Exo2-ExtraBold.otf);
+            }
+            
+            @font-face {
+                font-family: Nunito;
+                src: url(Nunito-Black.ttf);
+            }
+
+            .navig {
+                background-color: #36393e;
+                overflow: hidden;
+            }
+
+            .navig a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                transition: 0.3s;
+            }
+
+            .navig a:hover {
+                background-color: #6173d2;
+                color: white;
+                letter-spacing: 3px;
+                text-shadow: 0 2px 1px #747474, 
+                -1px 3px 1px #767676, 
+                -2px 5px 1px #787878, 
+                -3px 7px 1px #7a7a7a
+            }
+            
+            .navig a.active {
+                background-color: #6eca3f;
+                color: white;
+                letter-spacing: 3px;
+                text-shadow: 0 2px 1px #747474, 
+                -1px 3px 1px #767676, 
+                -2px 5px 1px #787878,
+                -3px 7px 1px #7a7a7a
+            }
+
+            div.navig {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+
+            h3 {
+                color: white;
+                font-family: Nunito;
+            }
+
+            #loader {
+                position: absolute;
+                left: 52%;
+                top: 53%;
+                z-index: 1;
+                width: 40px;
+                height: 40px;
+                margin: -76px 0 0 -76px;
+                border: 7px solid #b168d4;
+                border-radius: 50%;
+                border-top: 7px solid white;
+                -webkit-animation: spin 2s linear infinite;
+                animation: spin 2s linear infinite;
+            }
+
+            @-webkit-keyframes spin {
+              0% { -webkit-transform: rotate(0deg); }
+              100% { -webkit-transform: rotate(360deg); }
+            }
+
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+
+            @keyframes fadeIn {
+                0% { opacity: 0; }            
+                100% { opacity: 1; }    
+            }
+
+            .two {
+                animation: fadeIn 7s;
+            }
+
+            .two-two {
+                animation: fadeIn 6s;
+            }
+
+            .two-three {
+                animation: fadeIn 6s;
+            }
+
+            .three {
+                animation: fadeIn 6s;
+            }
+
+            .three.two {
+                animation: fadeIn 6s;
+            }
+
+            .three-three {
+                animation: fadeIn 6s;
+            }
+      
+            .three-four {
+                animation: fadeIn 6s;
+            }
+
+            .four {
+                animation: fadeIn 5s;
+            }
+
+            .four-two {
+                animation: fadeIn 6s;
+            }
+
+            .four-three {
+                animation: fadeIn 6s;
+           }
+           
+            .light-mode {
+                background-color: white;
+                color: #121111
+            }   
+      
+            .container {
+              display: inline-block; 
+            }
+            
+            .typed-out {
+              overflow: hidden; 
+              border-right: .15em solid black; 
+              white-space: nowrap; 
+              animation: typing 1s steps(20, end) forwards, blinking .8s infinite; 
+              
+              width: 0;
+            } 
+      
+            @keyframes typing { 
+              from { width: 0 } 
+              to { width: 100% } } 
+      
+            @keyframes blinking { 
+              from { border-color: transparent } 
+              to { border-color: black; } }
     </style>
   </head>
   <body onload="myFunction()">
