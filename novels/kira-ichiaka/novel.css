@@ -1,0 +1,90 @@
+body {
+    background-color: #121111;
+    background-repeat: no-repeat;
+}
+
+.navig {
+    background-color: #c4c4c4;
+    overflow: hidden;
+}
+
+.navig a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.navig a:hover {
+    background-color: #6173d2;
+    color: white;
+    letter-spacing: 3px; 
+    text-shadow: 0 2px 1px #747474, 
+    -1px 3px 1px #767676,
+    -2px 5px 1px #787878, 
+    -3px 7px 1px #7a7a7a
+}
+
+.navig a.active {
+    background-color: #6eca3f;
+    color: white;
+    letter-spacing: 3px; 
+    text-shadow: 0 2px 1px #747474, 
+    -1px 3px 1px #767676,
+    -2px 5px 1px #787878, 
+    -3px 7px 1px #7a7a7a
+}
+
+div.navig {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+@font-face {
+    font-family: Exo2;
+    src: url(Exo2-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito-Black.ttf);
+}
+
+@font-face {
+    font-family: SwanReg;
+    src: url(Swansea-q3pd.ttf);
+}
+
+@font-face {
+    font-family: SwanBold;
+    src: url(SwanseaBold-D0ox.ttf);
+}
+
+a {
+    color: white;
+    font-family: Exo2;
+}
+
+p {
+    color: white;
+    font-family: Nunito;
+}
+
+h1 {
+    color: white;
+    font-family: Exo2;
+}
+
+h2 {
+    color: white;
+    font-family: Exo2;
+}
+
+h3 {
+    color: white;
+    font-family: Exo2;
+}
